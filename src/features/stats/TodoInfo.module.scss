@@ -1,0 +1,27 @@
+.todoInfo {
+    padding-bottom: 18px;
+    border-bottom: var(--border-grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.information {
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: var(--font-weight-semibold);
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-dark);
+    padding: 8px;
+    border-radius: var(--border-radius-21);
+}

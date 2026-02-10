@@ -1,0 +1,28 @@
+.field {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    border: var(--border-dark);
+    background-color: var(--color-light);
+    padding: 12px 20px;
+    border-radius: var(--border-radius-21);
+    color: var(--color-dark);
+
+    &::placeholder {
+        color: var(--color-grey-light);
+    }
+
+    &:hover {
+        background-color: var(--color-light-dark);
+    }
+
+    &.isError {
+        border-color: var(--color-red);
+    }
+}
+
+.error {
+    color: var(--color-red);
+}

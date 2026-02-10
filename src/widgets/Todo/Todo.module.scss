@@ -1,0 +1,26 @@
+.todo {
+    padding: 49px 33px;
+    background-color: var(--color-light);
+    box-shadow: var(--box-shadow);
+    min-height: 700px;
+    width: 390px;
+    border-radius: var(--border-radius-36);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 18px;
+
+    & > span {
+        color: var(--color-green);
+    }
+}
+
+.scroll {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.addForm {
+    margin-bottom: 10px;
+}

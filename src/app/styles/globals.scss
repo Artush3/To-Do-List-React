@@ -1,0 +1,47 @@
+html {
+    background-color: var(--color-light-alt);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-block: 100px;
+    line-height: var(--line-height-one);
+    font-size: var(--font-size-14);
+    color: var(--color-dark);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-normal);
+}
+
+h1, .h1 {
+    font-size: var(--font-size-42);
+    font-weight: var(--font-weight-bold);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+:focus-visible {
+    outline: 3px dashed var(--color-purple);
+    outline-offset: 3px;
+    transition-duration: 0s !important;
+}
