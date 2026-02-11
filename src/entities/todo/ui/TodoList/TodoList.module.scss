@@ -1,12 +1,14 @@
 .todoList {
+    @include flex {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
 }
 
 .empty {
+    @include flex($justify-content: center);
+
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
 }

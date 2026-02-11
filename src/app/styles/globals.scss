@@ -3,10 +3,8 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-block: 100px;
+    @include flex($justify-content: center);
+    
     line-height: var(--line-height-one);
     font-size: var(--font-size-14);
     color: var(--color-dark);

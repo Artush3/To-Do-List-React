@@ -1,0 +1,29 @@
+$screen-sm: 576px;
+
+@mixin screen-sm-above {
+    @media (width > $screen-sm) {
+        @content;
+    }
+}
+
+@mixin screen-sm {
+    @media (width <= $screen-sm) {
+        @content;
+    }
+}
+
+@mixin hover($hasActiveEffectOnMobile: true) {
+    @media (any-hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @if $hasActiveEffectOnMobile {
+        @media (any-hover: none) {
+            &:active {
+                @content;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@ const tasksReducer = (state, action) => {
             return Array.isArray(action.tasks) ? action.tasks : state
         } 
         case "ADD": {
-            return [...state, action.task]
+            return [action.task, ...state]
         }
         case "TOGGLE_COMPLETE": {
             const { id, isDone } = action

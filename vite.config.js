@@ -13,6 +13,27 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
-    }
+    },
+    css: {
+      devSourcemap: true,
+      modules: {
+        // Поведение CSS-модулей
+        scopeBehaviour: 'local',
+        globalModulePaths: [],
+        generateScopedName: undefined,
+        hashPrefix: '',
+        localsConvention: 'camelCaseOnly',
+      },
+      preprocessorOptions: {
+        scss: {
+          // Автоматически подключаем helpers во все SCSS-файлы
+          additionalData: `
+            @use '@/app/styles/helpers' as *;
+          `,
+        },
+        less: {},
+        stylus: {},
+      },
+    },
   }
 })

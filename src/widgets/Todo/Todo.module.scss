@@ -1,10 +1,18 @@
 .todo {
+    margin-block: 100px;
     padding: 49px 33px;
     background-color: var(--color-light);
     box-shadow: var(--box-shadow);
     min-height: 700px;
     width: 390px;
     border-radius: var(--border-radius-36);
+
+    @include screen-sm {
+        margin-block: 0;
+        width: 100dvw;
+        height: 100%;
+        border-radius: 0;
+    }
 }
 
 .title {

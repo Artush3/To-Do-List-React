@@ -1,5 +1,5 @@
 .addForm {
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
+    @include flex(center) {
+        column-gap: 5px;
+    }
 }

@@ -1,7 +1,6 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center, true);
+    
     background-color: var(--color-dark);
     color: var(--color-light);
     padding: 15px;
@@ -9,7 +8,7 @@
     border: var(--border-dark);
 
     &:not(:disabled) {
-        &:hover {
+        @include hover {
             background-color: var(--color-light);
             color: var(--color-dark);
         }

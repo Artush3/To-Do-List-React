@@ -1,16 +1,15 @@
 .todoInfo {
+    @include flex(center, space-between);
+
     padding-bottom: 18px;
     border-bottom: var(--border-grey);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 43px;
 }
 
 .information {
-    column-gap: 5px;
-    display: flex;
-    align-items: center;
+    @include flex(center) {
+        column-gap: 5px;
+    }
 }
 
 .title {
@@ -18,9 +17,8 @@
 }
 
 .counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center);
+    
     background-color: var(--color-light-dark);
     padding: 8px;
     border-radius: var(--border-radius-21);
